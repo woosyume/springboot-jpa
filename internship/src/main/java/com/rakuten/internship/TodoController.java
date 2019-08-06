@@ -20,8 +20,6 @@ public class TodoController {
     public String home(Model model) {
         List<Todo> todos = service.findTodos();
         model.addAttribute("todos", todos);
-        model.addAttribute("test", "Why is this not displayed?");
-        
         return "home";
     }
 

@@ -8,9 +8,12 @@
       };
   </script>
   <body>
-    	<h1>
-          Task Management System ${test} aa
-    	</h1>
+    <img src="https://rakuten.today/wp-content/uploads/2018/06/one_logo.jpg" width="100" height="70"/>
+    <h1>
+      Todo Management System
+      <!-- <p th:text="'Hello, ' + ${test} + '!'" /> -->
+    </h1>
+    <h4>Rakuten Osaka 2019 Summer Interhship Pre-task</h4>
     
     <table border="1" width="500" cellspacing="0" cellpadding="5" bordercolor="#333333">
         <tr>
@@ -18,18 +21,17 @@
         <th bgcolor="#EE0000" width="150"><font color="#FFFFFF">Title</font></th>
         <th bgcolor="#EE0000" width="200"><font color="#FFFFFF">Description</font></th>
         </tr>
-        <tr>
-        <td bgcolor="#99CC00" align="right" nowrap>1</td>
-        <td bgcolor="#FFFFFF" valign="top" width="150">インターンシップの準備 ${test}</td>
-        <td bgcolor="#FFFFFF" valign="top" width="200">SpringBootを勉強する。</td>
+        <tr th:each="todo:${todos}">    <!-- b -->
+          <td th:text="${todo.id}"></td>    <!-- c -->
+          <td th:text="${todo.title}"></td>    <!-- d -->
+          <td th:text="${todo.description}"></td>    <!-- e -->
         </tr>
-        <tr>
+        <!-- <tr>
         <td bgcolor="#99CC00" align="right" nowrap>2</td>
         <td bgcolor="#FFFFFF" valign="top" width="150">家事</td>
         <td bgcolor="#FFFFFF" valign="top" width="200">洗い物をする。</td>
-        </tr>
-	</table>
-    
+        </tr> -->
+    </table>
     <br>
     <button id="btn" value="Click">Click</button>
   </body>
