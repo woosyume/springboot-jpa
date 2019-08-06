@@ -17,11 +17,11 @@ public class TodoService {
     @Autowired
     private TodoRepository repository;
 
-    public Optional<Todo> findProduct(Long id){
+    public Optional<Todo> findTodo(Long id){
         return repository.findById(id);
     }
 
-    public List<Todo> findProducts(){
+    public List<Todo> findTodos(){
         return repository.findAll();
     }
 

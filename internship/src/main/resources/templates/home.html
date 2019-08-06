@@ -1,8 +1,15 @@
 <html>
   <title>Summer Short Internship 2019</title>
+  <script type="text/javascript">
+      window.onload = function() {
+        document.getElementById("btn").onclick = function () {
+            location.href = "/create";
+        };
+      };
+  </script>
   <body>
     	<h1>
-          Task Management System
+          Task Management System ${test} aa
     	</h1>
     
     <table border="1" width="500" cellspacing="0" cellpadding="5" bordercolor="#333333">
@@ -13,7 +20,7 @@
         </tr>
         <tr>
         <td bgcolor="#99CC00" align="right" nowrap>1</td>
-        <td bgcolor="#FFFFFF" valign="top" width="150">インターンシップの準備</td>
+        <td bgcolor="#FFFFFF" valign="top" width="150">インターンシップの準備 ${test}</td>
         <td bgcolor="#FFFFFF" valign="top" width="200">SpringBootを勉強する。</td>
         </tr>
         <tr>
@@ -24,6 +31,6 @@
 	</table>
     
     <br>
-    <button type="button" name="Click" value="Click">Click</button>
+    <button id="btn" value="Click">Click</button>
   </body>
 </html>

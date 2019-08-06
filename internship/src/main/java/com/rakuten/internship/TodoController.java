@@ -1,9 +1,13 @@
 package com.rakuten.internship;
 
+import java.util.List;
+
+import com.rakuten.internship.entity.Todo;
 import com.rakuten.internship.service.TodoService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
@@ -13,7 +17,11 @@ public class TodoController {
     private TodoService service;
 
     @GetMapping("/")
-    public String home() {
+    public String home(Model model) {
+        List<Todo> todos = service.findTodos();
+        model.addAttribute("todos", todos);
+        model.addAttribute("test", "Why is this not displayed?");
+        
         return "home";
     }
 
