@@ -1,19 +1,9 @@
 package com.rakuten.internship.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-import lombok.Data;
-
-@Data
-@Entity
-@Table(name = "TODO")
+/**
+ * このクラスは、タスク管理の対象となるTodoのエンティティーです。
+ * エンティティーとして使えるように、コードを記入してください。
+ */
 public class Todo {
-    @Id
-    @GeneratedValue
-    private Long id;    
-    private String title;
-    private String description;
+    // TODO 必要なコードを記入してください。
 }

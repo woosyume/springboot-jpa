@@ -1,11 +1,7 @@
 <html>
   <title>Summer Short Internship 2019</title>
   <script type="text/javascript">
-      window.onload = function() {
-        document.getElementById("btn").onclick = function () {
-            location.href = "/create";
-        };
-      };
+  // TODO ボタンを制御するためのJSコードを作成してください。
   </script>
   <body>
     <h1>
@@ -20,9 +16,7 @@
         <th bgcolor="#EE0000" width="200"><font color="#FFFFFF">Description</font></th>
         </tr>
         <tr th:each="todo:${todos}">
-          <td th:text="${todo.id}"></td>
-          <td th:text="${todo.title}"></td>
-          <td th:text="${todo.description}"></td>
+          <!-- TODO データを出力するためのコードを作成してください。 -->
         </tr>
     </table>
     <br>
