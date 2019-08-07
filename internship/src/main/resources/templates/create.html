@@ -6,7 +6,7 @@
     	</h1>
       <h4>2019 Summer Interhship Pre-task</h4>
 
-    <form>
+    <form method="post">
           <table border="1" width="500" cellspacing="0" cellpadding="5" bordercolor="#333333">
             <tr>
             <th bgcolor="#EE0000" width="150"><font color="#FFFFFF">Title</font></th>
@@ -14,16 +14,15 @@
             </tr>
             <tr>
             <td bgcolor="#FFFFFF" valign="top" width="150">
-              	<input type="text" placeholder="課題のタイトルを入力してください。"/>
+              	<input type="text" name="title" placeholder="課題のタイトルを入力してください。"/>
               </td>
             <td bgcolor="#FFFFFF" valign="top" width="200">
-              	<input type="text" placeholder="課題の詳細を入力してください。"/>
+              	<input type="text" name="description" placeholder="課題の詳細を入力してください。"/>
               </td>
             </tr>
         </table>
+        <br>
+        <input type="submit" name="regiter" value="Resigter">
     </form>
-    
-    <br>
-    <button type="submit" name="Click" value="Click">Input</button>
   </body>
 </html>

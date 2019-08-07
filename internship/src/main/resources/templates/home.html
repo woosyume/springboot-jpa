@@ -19,18 +19,13 @@
         <th bgcolor="#EE0000" width="150"><font color="#FFFFFF">Title</font></th>
         <th bgcolor="#EE0000" width="200"><font color="#FFFFFF">Description</font></th>
         </tr>
-        <tr th:each="todo:${todos}">    <!-- b -->
-          <td th:text="${todo.id}"></td>    <!-- c -->
-          <td th:text="${todo.title}"></td>    <!-- d -->
-          <td th:text="${todo.description}"></td>    <!-- e -->
+        <tr th:each="todo:${todos}">
+          <td th:text="${todo.id}"></td>
+          <td th:text="${todo.title}"></td>
+          <td th:text="${todo.description}"></td>
         </tr>
-        <!-- <tr>
-        <td bgcolor="#99CC00" align="right" nowrap>2</td>
-        <td bgcolor="#FFFFFF" valign="top" width="150">家事</td>
-        <td bgcolor="#FFFFFF" valign="top" width="200">洗い物をする。</td>
-        </tr> -->
     </table>
     <br>
-    <button id="btn" value="Click">Click</button>
+    <button id="btn" value="Click">Go to the form</button>
   </body>
 </html>
