@@ -1,31 +1,27 @@
 package com.rakuten.internship.service;
 
 import java.util.List;
-import java.util.Optional;
 
 import com.rakuten.internship.entity.Todo;
-import com.rakuten.internship.repository.TodoRepository;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+/**
+ * このクラスは、データベースとのトランザクションをサポートするサービスクラスです。。
+ */
 @Service
 @Transactional
 public class TodoService {
 
-    @Autowired
-    private TodoRepository repository;
-
-    public Optional<Todo> findTodo(Long id){
-        return repository.findById(id);
-    }
+    // TODO 必要なメンバーを宣言してください。
 
     public List<Todo> findTodos(){
-        return repository.findAll();
+        // TODO 必要なコードを作成してください。
+        return null;
     }
 
     public Todo save(Todo todo) {
-        return repository.save(todo);
+        // TODO 必要なコードを作成してください。
+        return null;
     }
 }
